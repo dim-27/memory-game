@@ -1,7 +1,11 @@
+import './App.scss'
+import GameScore from './components/GameScore'
+
 function App() {
   return (
     <>
-      <div>
+      <div className='App'>
+        <GameScore/>
         <h1>Hello World</h1>
       </div>
     </>
