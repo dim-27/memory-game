@@ -1,12 +1,12 @@
-import './App.scss'
-import GameScore from './components/GameScore'
+import './Styles/App.css'
+import GameScore from './Components/GameScore'
 
 function App() {
   return (
     <>
       <div className='App'>
+        <h2>Hello World</h2>
         <GameScore/>
-        <h1>Hello World</h1>
       </div>
     </>
   )
