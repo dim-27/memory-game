@@ -9,7 +9,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-style: inherit;
+  font: inherit;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 html,
@@ -17,13 +23,89 @@ body {
   height: 100%;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img,svg,picture,canvas,video {
+  display: block;
+  max-width: 100%;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
 body {
-  font-family: $fontFamily1;
+  font-family: $fontPrimary;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
 }
 
 html:focus-within {
   scroll-behavior: smooth;
 }
+
+#root {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: $breakpointXSmall) {
+  #root {
+    max-width: $breakpointXSmall;
+  }
+}
+
+@media (min-width: $breakpointSmall) {
+  #root {
+    max-width: $breakpointSmall;
+  }
+}
+
+@media (min-width: $breakpointMedium) {
+  #root {
+    max-width: $breakpointMedium;
+  }
+
+  body {font-size: 1.125rem}
+  h1 {font-size: 3.25rem;}
+  h2 {font-size: 2.75rem;}
+  h3 {font-size: 2rem;}
+}
+
+@media (min-width: $breakpointLarge) {
+  #root {
+    max-width: $breakpointLarge;
+  }
+  body {font-size: 1.25rem;}
+  h1 {font-size: 3.5rem;}
+  h2 {font-size: 3rem;}
+  h3 {font-size: 2rem;}
+}
+
+@media (min-width: $breakpointXLarge) {
+  #root {
+    max-width: $breakpointXLarge;
+  }
+}
+
+@media (min-width: $breakpoint2XLarge) {
+  #root {
+    max-width: $breakpoint2XLarge;
+  }
+}
+
+
 
 
 

@@ -1,5 +1,14 @@
 @import '../Variables//Variable.scss';
 
-h1 {font-size: $fontHeader1;}
-h2 {font-size: $fontHeader2;}
-h3 {font-size: $fontHeader3;}
+html {
+  font: inherit;
+}
+
+body {
+  font-size: $fontBody;
+}
+
+.Game-Body {
+  display: grid;
+  place-items: center;
+}

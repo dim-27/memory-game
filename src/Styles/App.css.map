@@ -1,1 +1,1 @@
-{"version":3,"sources":["../Variables/Variable.scss","App.scss","App.css"],"names":[],"mappings":"AAAQ,+MAAA;ACER;EAAI,iBDKU;AEJd;;ADAA;EAAI,eDKU;AEDd;;ADHA;EAAI,iBDKU;AEEd","file":"App.css"}
+{"version":3,"sources":["../Variables/Variable.scss","App.scss","App.css"],"names":[],"mappings":"AAAQ,+MAAA;ACER;EACE,aAAA;ACAF;;ADGA;EACE,eDGS;AEHX;;ADGA;EACE,aAAA;EACA,mBAAA;ACAF","file":"App.css"}
