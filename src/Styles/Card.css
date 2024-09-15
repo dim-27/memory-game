@@ -1,7 +1,23 @@
-.Card-Image {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.Card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 30%;
+  gap: 1em;
+  border-radius: 2rem;
+}
+
+.Card-Image img {
+  max-width: 20rem;
+  max-height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+  box-shadow: rgba(229, 227, 227, 0.4) 0px 2px 4px, rgba(225, 222, 222, 0.537) 0px 7px 13px -3px, rgba(221, 219, 219, 0.438) 0px -3px 0px inset;
+  cursor: pointer;
+}
+
+.Card-Description {
+  font-weight: 700;
 }/*# sourceMappingURL=Card.css.map */

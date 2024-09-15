@@ -1,4 +1,4 @@
-@import '../Variables//Variable.scss';
+@import '../Variables/Variable.scss';
 
 html {
   font: inherit;
@@ -6,6 +6,8 @@ html {
 
 body {
   font-size: $fontBody;
+  background: $colorGradient;
+  color: $colorLight;
 }
 
 .Game-Body {
