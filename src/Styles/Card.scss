@@ -1,5 +1,11 @@
 @import '../Variables/Variable.scss';
 
+button {
+  background-color: transparent;
+  border: 0;
+  color: $colorLight;
+}
+
 .Card {
   display: flex;
   justify-content: center;

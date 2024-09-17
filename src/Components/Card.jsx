@@ -1,16 +1,20 @@
 import "../Styles/Card.css"
 
-export default function Card() {
+export default function Card({films}) {
   return (
     <>
-      <div className="Card">
-        <div className="Card-Image">
-          <img src="src/Assets/Ghibli1.jpg" alt="Howl and Sophie Young" />
-        </div>
-        <div className="Card-Description">
-          <p>Howl & Sophie</p>
-        </div>
-      </div>
+    <button>
+        {films.map((film) => (
+            <div className="Card" key={film.id}>
+              <div className="Card-Image">
+                <img src={film.image} alt="Howl and Sophie Young" />
+              </div>
+              <div className="Card-Description">
+                <p>Howl & Sophie</p>
+              </div>
+            </div>
+          ))}
+    </button>
     </>
   )
 }
