@@ -11,6 +11,8 @@ body {
 }
 
 .Game-Body {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
 }

@@ -61,9 +61,37 @@ html:focus-within {
   padding-right: 0.5rem;
 }
 
+@media (min-width: $breakpoint2XSmall) {
+  #root {
+    max-width: $breakpoint2XSmall;
+  }
+
+  .Card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .GameScore {
+    font-size: $fontHeader3;
+  }
+
+  .Scores {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  
+}
+
 @media (min-width: $breakpointXSmall) {
   #root {
     max-width: $breakpointXSmall;
+  }
+
+  .GameScore {
+    font-size: $fontHeader3;
+  }
+
+  .Scores {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -71,6 +99,9 @@ html:focus-within {
   #root {
     max-width: $breakpointSmall;
   }
+
+ 
+
 }
 
 @media (min-width: $breakpointMedium) {
@@ -78,20 +109,28 @@ html:focus-within {
     max-width: $breakpointMedium;
   }
 
-  body {font-size: 1.125rem}
-  h1 {font-size: 3.25rem;}
-  h2 {font-size: 2.75rem;}
-  h3 {font-size: 2rem;}
+  .Card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .GameScore {
+    font-size: $fontHeader2;
+  }
 }
 
 @media (min-width: $breakpointLarge) {
   #root {
     max-width: $breakpointLarge;
   }
-  body {font-size: 1.25rem;}
-  h1 {font-size: 3.5rem;}
-  h2 {font-size: 3rem;}
-  h3 {font-size: 2rem;}
+
+  .Card-Description {
+    font-size: $fontBody;
+  }
+  // h1 {font-size: 3.5rem;}
+  // h2 {font-size: 3rem;}
+  // h3 {font-size: 2rem;}
+
+  
 }
 
 @media (min-width: $breakpointXLarge) {
@@ -103,6 +142,11 @@ html:focus-within {
 @media (min-width: $breakpoint2XLarge) {
   #root {
     max-width: $breakpoint2XLarge;
+  }
+
+  .Card {
+    grid-template-columns: repeat(3, 1fr);
+
   }
 }
 

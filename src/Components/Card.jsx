@@ -3,18 +3,25 @@ import "../Styles/Card.css"
 export default function Card({films}) {
   return (
     <>
-    <button>
-        {films.map((film) => (
-            <div className="Card" key={film.id}>
-              <div className="Card-Image">
-                <img src={film.image} alt="Howl and Sophie Young" />
+    {films.length > 0 ? (
+      <button>
+        <div className="Card">
+          {films.map((film) => (
+              <div className="Card-List" key={film.id}
+              >
+                <div className="Card-Image">
+                  <img src={film.image} />
+                </div>
+                <div className="Card-Description">
+                  <p>{film.title}</p>
+                </div>
               </div>
-              <div className="Card-Description">
-                <p>Howl & Sophie</p>
-              </div>
-            </div>
-          ))}
-    </button>
+            ))}
+        </div>
+      </button>
+    ) : (
+      <div className="loading">Loading...</div>
+    )}
     </>
   )
 }

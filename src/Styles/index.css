@@ -60,9 +60,29 @@ html:focus-within {
   padding-right: 0.5rem;
 }
 
+@media (min-width: 375px) {
+  #root {
+    max-width: 375px;
+  }
+  .Card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .GameScore {
+    font-size: 2rem;
+  }
+  .Scores {
+    grid-template-rows: 1fr 1fr;
+  }
+}
 @media (min-width: 475px) {
   #root {
     max-width: 475px;
+  }
+  .GameScore {
+    font-size: 2rem;
+  }
+  .Scores {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 640px) {
@@ -74,34 +94,19 @@ html:focus-within {
   #root {
     max-width: 768px;
   }
-  body {
-    font-size: 1.125rem;
+  .Card {
+    grid-template-columns: repeat(3, 1fr);
   }
-  h1 {
-    font-size: 3.25rem;
-  }
-  h2 {
-    font-size: 2.75rem;
-  }
-  h3 {
-    font-size: 2rem;
+  .GameScore {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1024px) {
   #root {
     max-width: 1024px;
   }
-  body {
-    font-size: 1.25rem;
-  }
-  h1 {
-    font-size: 3.5rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 2rem;
+  .Card-Description {
+    font-size: 1rem;
   }
 }
 @media (min-width: 1280px) {
@@ -112,5 +117,8 @@ html:focus-within {
 @media (min-width: 1536px) {
   #root {
     max-width: 1536px;
+  }
+  .Card {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=index.css.map */

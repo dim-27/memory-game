@@ -4,21 +4,29 @@ import Card from './Components/Card'
 import { useState, useEffect } from 'react';
 
 function App() {
-  const [APIdata, setAPIdata] = useState(null);
+  const [APIdata, setAPIdata] = useState([]);
 
   useEffect(() => {
-    fetch("https://ghibliapi.vercel.app/films")
+    fetch(`https://ghibliapi.vercel.app/films`)
       .then(res => {
         return res.json();
       })
       .then(data => {
-        setAPIdata(data)     
-        console.log(data);
-           
+        const allFilms = [];
+        while(allFilms.length < 5) {
+          const getRandomFilm = data[Math.floor(Math.random() * data.length)];
+          if(!allFilms.includes(getRandomFilm)) {
+            allFilms.push(getRandomFilm)
+          }
+        }
+        setAPIdata(allFilms)                
       }).catch(err => {
         console.log(err);
       })
+
+
   }, [])
+  
 
   return (
     <>
