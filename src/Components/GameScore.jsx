@@ -1,6 +1,6 @@
 import "../Styles/GameScore.css"
 
-export default function GameScore() {
+export default function GameScore({currentScore, highScore}) {
   return (
       <header className="GameScore">
       <div className="Game-Title">
@@ -9,11 +9,11 @@ export default function GameScore() {
        <div className="Scores">
         <div className="CurrentScore">
           <h3 className="Title Current">Current Score</h3>
-          <p className="Score">0</p>
+          <p className="Score">{currentScore}</p>
         </div>
         <div className="BestScore">
           <h3 className="Title Best">Best Score</h3>
-          <p className="Score">0</p>
+          <p className="Score">{highScore}</p>
         </div>
        </div>
       </header>

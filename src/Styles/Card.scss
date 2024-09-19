@@ -9,7 +9,7 @@ button {
 .Card {
   display: grid;
   place-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .Card-List {
@@ -37,6 +37,7 @@ button {
 .loading {
   display: flex;
   font-size: $fontHeader1;
+  font-weight: $fontBold;
   text-align: center;
 }
 
@@ -46,7 +47,7 @@ img:hover {
 }
 
 img:active {
-  transform: translateY(0.5rem);
+  transform: translateY(0.2rem);
 }
 
 

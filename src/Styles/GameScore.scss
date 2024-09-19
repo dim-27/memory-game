@@ -2,19 +2,18 @@
 
 .GameScore {
   display: grid;
-  place-items: center;
+  place-content: center;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
   text-align: center;
   gap: 1rem;
-  max-width: 50rem;
 }
 
 .Scores {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 4rem;
 }
 

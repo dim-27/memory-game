@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .GameScore {
   display: grid;
-  place-items: center;
+  place-content: center;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
   text-align: center;
   gap: 1rem;
-  max-width: 50rem;
 }
 
 .Scores {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 4rem;
 }/*# sourceMappingURL=GameScore.css.map */
