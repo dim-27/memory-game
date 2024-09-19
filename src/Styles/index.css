@@ -128,6 +128,6 @@ html:focus-within {
     max-width: 1536px;
   }
   .Card {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }/*# sourceMappingURL=index.css.map */

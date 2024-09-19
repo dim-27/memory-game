@@ -28,9 +28,9 @@ function App() {
 
   const resetAPI = () => {
     setLoading(true);
+    getAPIGhibli();
 
     setTimeout(() => {
-      getAPIGhibli();
       setLoading(false)
     }, 1000)
 
@@ -56,7 +56,7 @@ function App() {
     }
 
   useEffect(() => {
-    getAPIGhibli()
+    resetAPI()
   }, [clickedCard, currentScore])
 
 
@@ -67,7 +67,7 @@ function App() {
           <GameScore currentScore={currentScore} highScore={highScore}/>
         </div>
         <div className="Game-Body">
-          {APIdata && <Card films={APIdata} handleCurrentScore={handleCurrentScore} onClickCard={handleCardClick}/>}
+          {loading? (<div className='loading'>Loading...</div>)  : (APIdata && <Card films={APIdata} handleCurrentScore={handleCurrentScore} onClickCard={handleCardClick}/>)}
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ export default function Card({films,handleCurrentScore, onClickCard}) {
   
   return (
     <>
-    {films.length > 0 ? (
+    {
       <button>
         <div className="Card">
           {films.map((film) => (
@@ -20,9 +20,7 @@ export default function Card({films,handleCurrentScore, onClickCard}) {
             ))}
         </div>
       </button>
-    ) : (
-      <div className="loading">Loading...</div>
-    )}
+  }
     </>
   )
 }
