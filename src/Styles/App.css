@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  font: inherit;
+}
+
+body {
+  font-size: 1rem;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #F9EFE5;
+}
+
+.Game-Body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}/*# sourceMappingURL=App.css.map */

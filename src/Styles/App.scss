@@ -1,0 +1,18 @@
+@import '../Variables/Variable.scss';
+
+html {
+  font: inherit;
+}
+
+body {
+  font-size: $fontBody;
+  background: $colorGradient;
+  color: $colorLight;
+}
+
+.Game-Body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}

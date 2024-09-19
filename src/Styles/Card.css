@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+button {
+  background-color: transparent;
+  border: 0;
+  color: #F9EFE5;
+}
+
+.Card {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+.Card-List {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.Card-Image img {
+  max-width: 15rem;
+  max-height: 15rem;
+  border-radius: 2rem;
+  box-shadow: rgba(229, 227, 227, 0.4) 0px 2px 4px, rgba(225, 222, 222, 0.537) 0px 7px 13px -3px, rgba(221, 219, 219, 0.438) 0px -3px 0px inset;
+  cursor: pointer;
+}
+
+.Card-Description {
+  font-weight: 700;
+}
+
+.loading {
+  display: flex;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+img:active {
+  transform: translateY(0.2rem);
+}/*# sourceMappingURL=Card.css.map */
