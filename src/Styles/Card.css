@@ -7,23 +7,20 @@ button {
 
 .Card {
   display: grid;
-  place-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .Card-List {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
   gap: 2rem;
-  text-align: center;
 }
 
-.Card-Image img {
-  max-width: 15rem;
-  max-height: 15rem;
+.Card-List img {
+  display: grid;
+  place-items: center;
   border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: rgba(229, 227, 227, 0.4) 0px 2px 4px, rgba(225, 222, 222, 0.537) 0px 7px 13px -3px, rgba(221, 219, 219, 0.438) 0px -3px 0px inset;
   cursor: pointer;
 }

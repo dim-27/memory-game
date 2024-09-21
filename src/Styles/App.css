@@ -10,8 +10,7 @@ body {
 }
 
 .Game-Body {
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
   padding: 2rem;
 }/*# sourceMappingURL=App.css.map */
