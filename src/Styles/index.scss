@@ -78,12 +78,19 @@ html:focus-within {
     grid-template-rows: 1fr 1fr;
   }
 
+  .Card-List {
+    max-width: 10rem
+  }
   
 }
 
 @media (min-width: $breakpointXSmall) {
   #root {
     max-width: $breakpointXSmall;
+  }
+
+  .Card {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .GameScore {
@@ -119,6 +126,10 @@ html:focus-within {
   h1 {font-size: 3.5rem;}
   h2 {font-size: 3rem;}
   h3 {font-size: 2rem;}
+
+  .Card-List {
+    max-width: 15rem
+  }
 }
 
 @media (min-width: $breakpointLarge) {
@@ -145,6 +156,10 @@ html:focus-within {
 
   .Card {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .Card-List {
+    max-width: 20rem
   }
 }
 

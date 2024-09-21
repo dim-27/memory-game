@@ -73,10 +73,16 @@ html:focus-within {
   .Scores {
     grid-template-rows: 1fr 1fr;
   }
+  .Card-List {
+    max-width: 10rem;
+  }
 }
 @media (min-width: 475px) {
   #root {
     max-width: 475px;
+  }
+  .Card {
+    grid-template-columns: repeat(2, 1fr);
   }
   .GameScore {
     font-size: 2rem;
@@ -109,6 +115,9 @@ html:focus-within {
   h3 {
     font-size: 2rem;
   }
+  .Card-List {
+    max-width: 15rem;
+  }
 }
 @media (min-width: 1024px) {
   #root {
@@ -129,5 +138,8 @@ html:focus-within {
   }
   .Card {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .Card-List {
+    max-width: 20rem;
   }
 }/*# sourceMappingURL=index.css.map */

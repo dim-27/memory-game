@@ -28,7 +28,6 @@ function App() {
 
   const resetAPI = () => {
     setLoading(true);
-    getAPIGhibli();
 
     setTimeout(() => {
       setLoading(false)
@@ -39,6 +38,9 @@ function App() {
   const getAPIGhibli = () => {
       fetch(`https://ghibliapi.vercel.app/films`)
         .then(res => {
+          if(!res.ok){
+            throw Error("Could not fetch data");
+          }
           return res.json();
         })
         .then(data => {
@@ -51,11 +53,12 @@ function App() {
           }
           setAPIdata(allFilms)                
         }).catch(err => {
-          console.log(err);
+          console.log(err.message);
         })
     }
 
   useEffect(() => {
+    getAPIGhibli();
     resetAPI()
   }, [clickedCard, currentScore])
 
