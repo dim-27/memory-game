@@ -8,6 +8,7 @@ Simple memory game where you need to remember different ghibli movies
 - HTML
 - CSS
 - Javascript
+- DOM
 - React.js
 - Ghibli API
 - Sass
